@@ -253,12 +253,12 @@ def send_daily_kural():
                 </tr>
             </table>
             
-            <p style="font-size: 24px; 
+            <p style="font-size: 15px; 
                       color: #000000; 
                       margin-top: 25px; 
                       margin-bottom: 25px; 
-                      text-align: center; 
-                      line-height: 1.2; 
+                      text-align: left; 
+                      line-height: 1; 
                       padding: 5px 0;">
                 <strong style="color: #444444;">குறள்:</strong><br>
                 {formatted_tamil_text} 
@@ -319,4 +319,5 @@ def send_daily_kural():
         print(f"A critical error occurred during email transmission: {e}")
 
 if __name__ == "__main__":
+
     send_daily_kural()
