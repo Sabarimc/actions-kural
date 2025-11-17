@@ -246,23 +246,27 @@ def send_daily_kural():
             
             <hr style="border: none; border-top: 1px dashed #5C4033; margin: 15px 0;">
             
-            <table style="width: 100%; margin-bottom: 20px;">
-                <tr>
-                    <td style="width: 50%; color: #5C4033; font-weight: bold; font-size: 16px;">திருக்குறள் (Kural): {kural_num}</td>
-                    <td style="width: 50%; color: #5C4033; text-align: right; font-weight: bold; font-size: 16px;">அதிகாரம் (Chapter): {athigaram}</td>
-                </tr>
-            </table>
-            
-            <p style="font-size: 15px; 
-                      color: #000000; 
-                      margin-top: 25px; 
-                      margin-bottom: 25px; 
-                      text-align: left; 
-                      line-height: 1; 
-                      padding: 5px 0;">
-                <strong style="color: #444444;">குறள்:</strong><br>
-                {formatted_tamil_text} 
-            </p>
+            <table style="width: 100%; margin-bottom: 15px;">
+    <tr>
+        <td style="width: 50%; color: #5C4033; font-weight: bold; font-size: 14px; white-space: nowrap; padding-right: 5px;">
+            திருக்குறள் (Kural): {kural_num}
+        </td>
+        <td style="width: 50%; color: #5C4033; text-align: right; font-weight: bold; font-size: 14px; white-space: nowrap; padding-left: 5px;">
+            அதிகாரம் (Chapter): {athigaram}
+        </td>
+    </tr>
+</table>
+
+<p style="font-size: 20px; /* Reduced font size for better fit */
+          color: #000000;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          text-align: center; /* Centered for better mobile look */
+          line-height: 1.2;
+          padding: 5px 0;">
+    <strong style="color: #444444;">குறள்:</strong><br>
+    {formatted_tamil_text} 
+</p>
             <h3 style="color: #5C4033; border-bottom: 1px dashed #5C4033; padding-bottom: 5px; margin-top: 15px; margin-bottom: 10px;">பொருள்:</h3>
             <p style="font-style: italic; color: #444444; margin-bottom: 15px;">
                 {translation_ta}
@@ -321,3 +325,4 @@ def send_daily_kural():
 if __name__ == "__main__":
 
     send_daily_kural()
+
