@@ -1,4 +1,4 @@
-name: Daily Thirukural Sender
+name: Daily kural Sender
 
 # This defines the triggers for the workflow
 on:
