@@ -4,7 +4,7 @@ name: Daily kural Sender
 on:
   # Runs the job daily at 8:00 AM Coordinated Universal Time (UTC)
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '10 12 * * *'
   # Allows you to test the job manually from the GitHub Actions tab
   workflow_dispatch:
 
