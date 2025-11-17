@@ -246,7 +246,7 @@ def send_daily_kural():
             
             <hr style="border: none; border-top: 1px dashed #5C4033; margin: 15px 0;">
             
-            <table style="width: 100%; margin-bottom: 15px;">
+           <table style="width: 100%; margin-bottom: 15px;">
     <tr>
         <td style="width: 50%; color: #5C4033; font-weight: bold; font-size: 14px; white-space: nowrap; padding-right: 5px;">
             திருக்குறள் (Kural): {kural_num}
@@ -257,11 +257,11 @@ def send_daily_kural():
     </tr>
 </table>
 
-<p style="font-size: 20px; /* Reduced font size for better fit */
+<p style="font-size: 18px; /* Optimized font size for 4-word/3-word split on mobile */
           color: #000000;
           margin-top: 20px;
           margin-bottom: 20px;
-          text-align: center; /* Centered for better mobile look */
+          text-align: left; /* CHANGED to Left-Aligned */
           line-height: 1.2;
           padding: 5px 0;">
     <strong style="color: #444444;">குறள்:</strong><br>
@@ -325,4 +325,5 @@ def send_daily_kural():
 if __name__ == "__main__":
 
     send_daily_kural()
+
 
