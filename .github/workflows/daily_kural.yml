@@ -32,8 +32,5 @@ jobs:
         SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
         RECEIVER_EMAILS: ${{ secrets.RECEIVER_EMAILS }}
         # Ensure this run command uses your correct file name!
-      run: python daily_thirukkural.py 
-
-      # Ensure this run command uses your correct file name!
-      run: python daily_thirukkural.py 
+      run: python daily_thirukkural.py
 
