@@ -257,14 +257,14 @@ def send_daily_kural():
     </tr>
 </table>
 
-<p style="font-size: 18px; /* Optimized font size for 4-word/3-word split on mobile */
+<p style="font-size: 10px; /* Optimized font size for 4-word/3-word split on mobile */
           color: #000000;
           margin-top: 20px;
           margin-bottom: 20px;
           text-align: left; /* CHANGED to Left-Aligned */
-          line-height: 1.2;
+          line-height: 1.0;
           padding: 5px 0;">
-    <strong style="color: #444444;">குறள்:</strong><br>
+    <h3 strong style="color: #444444; border-bottom: 1px dashed #5C4033; padding-bottom: 5px; margin-top: 15px; margin-bottom: 10px;">குறள்:</strong><br></h3>
     {formatted_tamil_text} 
 </p>
             <h3 style="color: #5C4033; border-bottom: 1px dashed #5C4033; padding-bottom: 5px; margin-top: 15px; margin-bottom: 10px;">பொருள்:</h3>
@@ -325,5 +325,6 @@ def send_daily_kural():
 if __name__ == "__main__":
 
     send_daily_kural()
+
 
 
